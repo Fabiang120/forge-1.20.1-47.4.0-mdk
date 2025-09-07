@@ -17,8 +17,20 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS
         = DeferredRegister.create(ForgeRegistries.BLOCKS,TutorialMod.MOD_ID);
 
+    public static final RegistryObject<Block> raw_slimitite_block = registerBlock("raw_slimitite_block",
+        ()->new Block(BlockBehaviour.Properties.of()
+            .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> slimitite_block = registerBlock("slimitite_block",
+        ()->new Block(BlockBehaviour.Properties.of()
+            .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
     public static final RegistryObject<Block> ketocononite_block =registerBlock("ketocononite_block",
         () ->new Block(BlockBehaviour.Properties.of()
+            .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> raw_ketocononite_block = registerBlock("raw_ketocononite_block",
+        ()->new Block(BlockBehaviour.Properties.of()
             .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

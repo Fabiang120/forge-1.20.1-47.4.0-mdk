@@ -21,6 +21,11 @@ public class ModCreativeModTabs {
                     pOutput.accept(ModItems.ketocononite.get());
                     pOutput.accept(ModItems.slimitite.get());
                     pOutput.accept(ModBlocks.ketocononite_block.get());
+                    pOutput.accept(ModBlocks.slimitite_block.get());
+                    pOutput.accept(ModBlocks.raw_ketocononite_block.get());
+                    pOutput.accept(ModBlocks.raw_slimitite_block.get());
+                    pOutput.accept(ModItems.raw_ketocononite.get());
+                    pOutput.accept(ModItems.raw_slimitite.get());
                 })
                .build());
 

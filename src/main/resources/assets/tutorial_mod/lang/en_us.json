@@ -1,6 +1,12 @@
 {
   "item.tutorial_mod.ketocononite": "Ketocononite Ingot",
   "item.tutorial_mod.slimitite": "Slimitite Ingot",
-  "block.tutorial_mod.ketocononite_block": "Block of Ketocononite",
+  "block.tutorial_mod.ketocononite_block": "Ketocononite Block",
+  "block.tutorial_mod.slimitite_block" : "Slimitite Block",
+  "item.tutorial_mod.raw_ketocononite": "Raw Ketocononite",
+  "item.tutorial_mod.raw_slimitite": "Raw Slimitite",
+  "block.tutorial_mod.raw_ketocononite_block": "Raw Ketocononite Block",
+  "block.tutorial_mod.raw_slimitite_block": "Raw Slimitite Block",
+
   "creativetab.tutorial_tab": "WildDinosaurs"
 }

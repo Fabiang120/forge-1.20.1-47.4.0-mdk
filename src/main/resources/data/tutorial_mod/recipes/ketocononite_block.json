@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "tutorial_mod:ketocononite"
+    }
+  },
+    "pattern": [
+      "AAA",
+      "AAA",
+      "AAA"
+    ],
+    "result": {
+      "count": 1,
+      "item": "tutorial_mod:ketocononite_block"
+    }
+
+}

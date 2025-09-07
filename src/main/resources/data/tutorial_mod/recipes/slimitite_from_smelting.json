@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "slimitite_ingot",
+  "ingredient": {
+    "item": "tutorial_mod:raw_slimitite"
+  },
+  "result": "tutorial_mod:slimitite"
+}

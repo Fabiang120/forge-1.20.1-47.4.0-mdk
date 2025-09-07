@@ -55,9 +55,14 @@ public class TutorialMod
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.ketocononite);
             event.accept(ModItems.slimitite);
+            event.accept(ModItems.raw_ketocononite);
+            event.accept(ModItems.raw_slimitite);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.ketocononite_block);
+            event.accept(ModBlocks.slimitite_block);
+            event.accept(ModBlocks.raw_ketocononite_block);
+            event.accept(ModBlocks.raw_slimitite_block);
         }
     }
     // This is where I stopped //

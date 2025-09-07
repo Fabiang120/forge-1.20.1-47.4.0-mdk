@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "ketocononite_ingot",
+  "ingredient": {
+    "item": "tutorial_mod:raw_ketocononite"
+  },
+  "result": "tutorial_mod:ketocononite"
+}
