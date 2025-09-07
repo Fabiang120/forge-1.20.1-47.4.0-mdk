@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-      "layer0": "tutorial_mod:item/slimitite"
+      "layer0": "wild_dinos:item/raw_slimitite"
   }
 }

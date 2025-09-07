@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-      "layer0": "tutorial_mod:item/ketocononite"
+      "layer0": "wild_dinos:item/raw_ketocononite"
   }
 }

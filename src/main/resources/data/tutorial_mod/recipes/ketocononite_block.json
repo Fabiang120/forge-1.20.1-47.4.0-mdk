@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "tutorial_mod:ketocononite"
+      "item": "wild_dinos:ketocononite"
     }
   },
     "pattern": [
@@ -13,7 +13,7 @@
     ],
     "result": {
       "count": 1,
-      "item": "tutorial_mod:ketocononite_block"
+      "item": "wild_dinos:ketocononite_block"
     }
 
 }

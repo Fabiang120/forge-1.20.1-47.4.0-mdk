@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "tutorial_mod:slimitite"
+      "item": "wild_dinos:slimitite"
     }
   },
     "pattern": [
@@ -13,7 +13,7 @@
     ],
     "result": {
       "count": 1,
-      "item": "tutorial_mod:slimitite_block"
+      "item": "wild_dinos:slimitite_block"
     }
 
 }

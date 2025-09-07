@@ -23,7 +23,7 @@ import org.slf4j.Logger;
 public class TutorialMod
 {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "tutorial_mod";
+    public static final String MOD_ID = "wild_dinos";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
@@ -61,8 +61,8 @@ public class TutorialMod
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.ketocononite_block);
             event.accept(ModBlocks.slimitite_block);
-            event.accept(ModBlocks.raw_ketocononite_block);
-            event.accept(ModBlocks.raw_slimitite_block);
+            event.accept(ModBlocks.raw_ketocononite_ore);
+            event.accept(ModBlocks.raw_slimitite_ore);
         }
     }
     // This is where I stopped //

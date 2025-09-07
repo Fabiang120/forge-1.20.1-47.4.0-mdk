@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "tutorial_mod:block/raw_ketocononite_block"
+    "all": "wild_dinos:block/raw_slimitite_ore"
   }
 }

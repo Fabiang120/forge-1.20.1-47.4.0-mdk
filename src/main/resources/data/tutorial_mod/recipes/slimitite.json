@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "tutorial_mod:slimitite_block"
+      "item": "wild_dinos:slimitite_block"
     }
   ],
   "result": {
     "count": 9,
-    "item": "tutorial_mod:slimitite"
+    "item": "wild_dinos:slimitite"
   }
 }
