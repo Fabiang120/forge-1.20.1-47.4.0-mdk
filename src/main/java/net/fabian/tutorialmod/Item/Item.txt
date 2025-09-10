@@ -1,5 +1,5 @@
-Ketocononite
-Slimitite
+Ketocononite_Ingot
+Slimitite_Ingot
 Raw_Ketocononite
 Raw_Slimitite
 Raw_Ketocononite_block

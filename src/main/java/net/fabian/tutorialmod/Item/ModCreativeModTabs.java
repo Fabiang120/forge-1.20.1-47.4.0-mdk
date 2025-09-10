@@ -15,11 +15,11 @@ public class ModCreativeModTabs {
         DeferredRegister.create(Registries.CREATIVE_MODE_TAB,TutorialMod.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> TUTORIAL = CREATIVE_MODE_TABS.register("tutorial_tab",
-        ()->CreativeModeTab.builder().icon(()->new ItemStack(ModItems.ketocononite.get()))
+        ()->CreativeModeTab.builder().icon(()->new ItemStack(ModItems.ketocononite_ingot.get()))
             .title(Component.translatable("creativetab.tutorial_tab"))
             .displayItems((pParameters, pOutput)->{
-                    pOutput.accept(ModItems.ketocononite.get());
-                    pOutput.accept(ModItems.slimitite.get());
+                    pOutput.accept(ModItems.ketocononite_ingot.get());
+                    pOutput.accept(ModItems.slimitite_ingot.get());
                     pOutput.accept(ModBlocks.ketocononite_block.get());
                     pOutput.accept(ModBlocks.slimitite_block.get());
                     pOutput.accept(ModBlocks.raw_ketocononite_ore.get());

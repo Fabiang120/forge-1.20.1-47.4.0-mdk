@@ -3,9 +3,9 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.7,
-  "group": "ketocononite_ingot",
+  "group": "slimitite_ingot",
   "ingredient": {
-    "item": "wild_dinos:raw_ketocononite"
+    "item": "wild_dinos:raw_slimitite"
   },
-  "result": "wild_dinos:ketocononite"
+  "result": "wild_dinos:slimitite_ingot"
 }

@@ -12,10 +12,10 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
         DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MOD_ID);
 
-    public static final RegistryObject<Item> ketocononite = ITEMS.register("ketocononite",
+    public static final RegistryObject<Item> ketocononite_ingot = ITEMS.register("ketocononite_ingot",
         () ->new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> slimitite = ITEMS.register("slimitite",
+    public static final RegistryObject<Item> slimitite_ingot = ITEMS.register("slimitite_ingot",
         () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> raw_ketocononite = ITEMS.register("raw_ketocononite",

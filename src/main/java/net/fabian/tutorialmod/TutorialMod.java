@@ -53,8 +53,8 @@ public class TutorialMod
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.ketocononite);
-            event.accept(ModItems.slimitite);
+            event.accept(ModItems.ketocononite_ingot);
+            event.accept(ModItems.slimitite_ingot);
             event.accept(ModItems.raw_ketocononite);
             event.accept(ModItems.raw_slimitite);
         }
