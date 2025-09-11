@@ -52,18 +52,6 @@ public class TutorialMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.ketocononite_ingot);
-            event.accept(ModItems.slimitite_ingot);
-            event.accept(ModItems.raw_ketocononite);
-            event.accept(ModItems.raw_slimitite);
-        }
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
-            event.accept(ModBlocks.ketocononite_block);
-            event.accept(ModBlocks.slimitite_block);
-            event.accept(ModBlocks.raw_ketocononite_ore);
-            event.accept(ModBlocks.raw_slimitite_ore);
-        }
     }
     // This is where I stopped //
     // You can use SubscribeEvent and let the Event Bus discover methods to call

@@ -1,5 +1,6 @@
 package net.fabian.tutorialmod.Item;
 
+import net.fabian.tutorialmod.Item.custom.MetalDetectorItem;
 import net.fabian.tutorialmod.TutorialMod;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.event.RegisterColorHandlersEvent;
@@ -23,6 +24,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> raw_slimitite = ITEMS.register("raw_slimitite",
         () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+        () -> new MetalDetectorItem(new Item.Properties().durability(100)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
