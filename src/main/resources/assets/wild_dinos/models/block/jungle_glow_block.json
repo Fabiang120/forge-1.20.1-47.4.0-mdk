@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "wild_dinos:block/jungle_glow_block"
+  }
+}

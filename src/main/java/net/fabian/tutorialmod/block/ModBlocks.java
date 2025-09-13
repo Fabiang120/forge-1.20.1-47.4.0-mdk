@@ -1,6 +1,7 @@
 package net.fabian.tutorialmod.block;
 import net.fabian.tutorialmod.Item.ModItems;
 import net.fabian.tutorialmod.TutorialMod;
+import net.fabian.tutorialmod.block.custom.JungleGlowBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -31,6 +32,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ketocononite_block =registerBlock("ketocononite_block",
         () ->new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> jungle_glow_block =registerBlock("jungle_glow_block",
+        () ->new JungleGlowBlock(BlockBehaviour.Properties.copy(Blocks.GLOW_LICHEN)));
 
     public static final RegistryObject<Block> raw_ketocononite_ore =
         registerBlock("raw_ketocononite_ore",

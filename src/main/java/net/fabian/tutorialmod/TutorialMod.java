@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import net.fabian.tutorialmod.Item.ModCreativeModTabs;
 import net.fabian.tutorialmod.Item.ModItems;
 import net.fabian.tutorialmod.block.ModBlocks;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -67,6 +69,10 @@ public class TutorialMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            event.enqueueWork(() -> {
+                ItemBlockRenderTypes.setRenderLayer(ModBlocks.jungle_glow_block.get(), RenderType.cutout());
+            });
+
         }
     }
 }

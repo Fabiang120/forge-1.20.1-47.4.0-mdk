@@ -27,6 +27,7 @@ public class ModCreativeModTabs {
                     pOutput.accept(ModItems.METAL_DETECTOR.get());
                     pOutput.accept(ModItems.raw_ketocononite.get());
                     pOutput.accept(ModItems.raw_slimitite.get());
+                    pOutput.accept(ModBlocks.jungle_glow_block.get());
                 })
                .build());
 
