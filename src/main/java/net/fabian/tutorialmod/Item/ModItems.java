@@ -1,7 +1,10 @@
 package net.fabian.tutorialmod.Item;
 
+import net.fabian.tutorialmod.Item.custom.FuelBlockItem;
 import net.fabian.tutorialmod.Item.custom.MetalDetectorItem;
+import net.fabian.tutorialmod.Item.custom.ModFoods;
 import net.fabian.tutorialmod.TutorialMod;
+import net.fabian.tutorialmod.block.ModBlocks;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.event.RegisterColorHandlersEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,6 +30,14 @@ public class ModItems {
 
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
         () -> new MetalDetectorItem(new Item.Properties().durability(100)));
+
+    public static final RegistryObject<Item> CHARCOAL_WOOD = ITEMS.register("charcoal_wood",
+        () -> new FuelBlockItem(ModBlocks.CHARCOAL_WOOD.get(),
+            new Item.Properties(),
+            200));
+
+    public static final RegistryObject<Item> TREX_MEAT = ITEMS.register("trex_meat",
+        () -> new Item(new Item.Properties().food(ModFoods.TREX_MEAT)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

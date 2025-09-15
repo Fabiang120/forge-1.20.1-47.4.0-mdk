@@ -28,6 +28,8 @@ public class ModCreativeModTabs {
                     pOutput.accept(ModItems.raw_ketocononite.get());
                     pOutput.accept(ModItems.raw_slimitite.get());
                     pOutput.accept(ModBlocks.jungle_glow_block.get());
+                    pOutput.accept(ModItems.TREX_MEAT.get());
+                    pOutput.accept(ModBlocks.CHARCOAL_WOOD.get());
                 })
                .build());
 

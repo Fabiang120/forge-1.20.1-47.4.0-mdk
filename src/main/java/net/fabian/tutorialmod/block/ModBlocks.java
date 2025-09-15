@@ -1,5 +1,6 @@
 package net.fabian.tutorialmod.block;
 import net.fabian.tutorialmod.Item.ModItems;
+import net.fabian.tutorialmod.Item.custom.MetalDetectorItem;
 import net.fabian.tutorialmod.TutorialMod;
 import net.fabian.tutorialmod.block.custom.JungleGlowBlock;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -36,10 +37,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> jungle_glow_block =registerBlock("jungle_glow_block",
         () ->new JungleGlowBlock(BlockBehaviour.Properties.copy(Blocks.GLOW_LICHEN)));
 
+
     public static final RegistryObject<Block> raw_ketocononite_ore =
         registerBlock("raw_ketocononite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of()
                             .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST), UniformInt.of(2, 4)));
+
+    public static final RegistryObject<Block> CHARCOAL_WOOD = BLOCKS.register("charcoal_wood",
+        () -> new Block(BlockBehaviour.Properties.of().strength(3.0F)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
