@@ -68,6 +68,7 @@ public class TutorialMod
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             event.enqueueWork(() -> {
+
                 ItemBlockRenderTypes.setRenderLayer(ModBlocks.jungle_glow_block.get(), RenderType.cutout());
             });
 
