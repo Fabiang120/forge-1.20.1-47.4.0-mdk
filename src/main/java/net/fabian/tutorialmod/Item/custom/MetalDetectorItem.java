@@ -1,4 +1,5 @@
 package net.fabian.tutorialmod.Item.custom;
+import net.fabian.tutorialmod.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.client.resources.language.I18n;
@@ -26,32 +27,45 @@ public class MetalDetectorItem extends Item {
 
     @Override
     public InteractionResult useOn(UseOnContext pContext) {
-        if(!pContext.getLevel().isClientSide()) {
+        if (!pContext.getLevel().isClientSide()) {
             BlockPos positionClicked = pContext.getClickedPos();
             Player player = pContext.getPlayer();
             boolean foundBlock = false;
-            for(int i=0; i<=positionClicked.getX() +64; i++) {
-                BlockState state = pContext.getLevel().getBlockState(positionClicked.below(i));
-                if(isValuableBlock(state)){
-                    outputValuableCoordinates(positionClicked.below(i), player ,state.getBlock());
+
+            // Search downward 64 blocks from the clicked position
+            for (int i = 0; i <= 64; i++) {
+                BlockPos checkPos = positionClicked.below(i);
+                BlockState state = pContext.getLevel().getBlockState(checkPos);
+
+                if (isValuableBlock(state)) {
+                    outputValuableCoordinates(checkPos, player, state.getBlock());
                     foundBlock = true;
                     break;
                 }
             }
-            if(!foundBlock) {
+
+            if (!foundBlock) {
                 player.sendSystemMessage(Component.literal("No valuables found"));
             }
         }
-        pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(), player->player.broadcastBreakEvent(player.getUsedItemHand()));
+
+        // Damage the item after each use
+        pContext.getItemInHand().hurtAndBreak(
+            1,
+            pContext.getPlayer(),
+            player -> player.broadcastBreakEvent(player.getUsedItemHand())
+        );
+
         return InteractionResult.SUCCESS;
     }
+
     private void outputValuableCoordinates(BlockPos blockPos, Player player, Block block) {
         player.sendSystemMessage(Component.literal("Found " + I18n.get(block.getDescriptionId()) + " at " +
             "(" + blockPos.getX() + ", " + blockPos.getY() + "," + blockPos.getZ() + ")"));
     }
 
     private boolean isValuableBlock(BlockState state) {
-        return state.is(Blocks.IRON_ORE) || state.is(Blocks.DIAMOND_ORE);
+        return state.is(ModTags.Blocks.METAL_DETECTOR_VALUABLES);
 
     }
 
@@ -60,4 +74,5 @@ public class MetalDetectorItem extends Item {
         pTooltipComponents.add(Component.translatable("tooltip_info_item.metal_detector"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
+
 }
