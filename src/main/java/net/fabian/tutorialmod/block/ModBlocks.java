@@ -6,10 +6,7 @@ import net.fabian.tutorialmod.block.custom.JungleGlowBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -33,6 +30,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ketocononite_block =registerBlock("ketocononite_block",
         () ->new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> KETOCONONITE_STAIRS =registerBlock("ketocononite_stairs",
+        () ->new StairBlock(()-> ModBlocks.ketocononite_block.get().defaultBlockState(),
+            BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
 
     public static final RegistryObject<Block> jungle_glow_block =registerBlock("jungle_glow_block",
         () ->new JungleGlowBlock(BlockBehaviour.Properties.copy(Blocks.GLOW_LICHEN)));

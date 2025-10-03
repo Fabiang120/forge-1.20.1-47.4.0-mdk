@@ -10,6 +10,7 @@
   "block.wild_dinos.raw_ketocononite_ore": "Raw Ketocononite Ore",
   "item.wild_dinos.trex_meat": "Trex Meat",
   "block.wild_dinos.charcoal_wood": "Charcoal Wood",
+  "block.wild_dinos.ketocononite_stairs" : "Ketocononite Stairs",
   "block.wild_dinos.raw_slimitite_ore": "Raw Slimitite Ore",
   "tooltip_info_item.metal_detector" : "I detect ores yes",
   "creativetab.tutorial_tab": "WildDinosaurs"

@@ -9,6 +9,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProviderType;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -25,10 +26,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.slimitite_block);
         blockWithItem(ModBlocks.raw_ketocononite_ore);
         blockWithItem(ModBlocks.raw_slimitite_ore);
-        blockWithItem(ModBlocks.jungle_glow_block);
+        stairsBlock(((StairBlock)ModBlocks.KETOCONONITE_STAIRS.get()),blockTexture(ModBlocks.ketocononite_block.get()));
     }
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
-
 }

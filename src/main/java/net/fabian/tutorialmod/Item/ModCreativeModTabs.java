@@ -30,7 +30,8 @@ public class ModCreativeModTabs {
                     pOutput.accept(ModBlocks.jungle_glow_block.get());
                     pOutput.accept(ModItems.TREX_MEAT.get());
                     pOutput.accept(ModBlocks.CHARCOAL_WOOD.get());
-                })
+                    pOutput.accept(ModBlocks.KETOCONONITE_STAIRS.get());
+            })
                .build());
 
     public static void register(IEventBus eventBus) {

@@ -25,6 +25,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(ModTags.Blocks.METAL_DETECTOR_VALUABLES)
             .addTag(Tags.Blocks.ORES);
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+            .add(ModBlocks.ketocononite_block.get())
+            .add(ModBlocks.raw_ketocononite_ore.get())
+            .add(ModBlocks.slimitite_block.get())
+            .add(ModBlocks.raw_slimitite_ore.get());
+        this.tag(BlockTags.MINEABLE_WITH_AXE)
+            .add(ModBlocks.CHARCOAL_WOOD.get());
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
             .add(ModBlocks.ketocononite_block.get())
             .add(ModBlocks.raw_ketocononite_ore.get())
